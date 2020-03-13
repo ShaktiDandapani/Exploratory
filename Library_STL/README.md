@@ -28,6 +28,15 @@ https://www.learncpp.com/cpp-tutorial/16-2-stl-containers-overview/
 
 Iterate over container classes :P
 
+-- Compared to for loops with iterating integers, 
+   iterators go through the specified container and 
+   provide results in an order based on the container 
+   type. 
+-- Also, functions are present within iterators whic
+   normally would need to be manually coded if we
+   wanted to achieve a specific functionality already
+   available with an iterator
+
 Each container function has four basic member functions,
 which can be used with iterators:
 a. begin()
