@@ -3,7 +3,7 @@
 Learning the standard library functions, classes etc.
 
 
-# # Parallels to Python
+## Parallels to Python
 
 
 Given my exposure to various libraries in Python, 
@@ -13,18 +13,18 @@ It is of interest to understand if similar
 capabilities can be found in C++ and also 
 learn about functionalities not present in Python.
 
-# # Link
+## Link
 
 The guide follows from:
 https://www.learncpp.com/cpp-tutorial/16-2-stl-containers-overview/
 
-# # Containers
+## Containers
 
 1. Sequence Containers: vector, etc.. 
 2. Associative Containers: set, mulltiset, map, multimap
 3. Container Adapters: stack, queue, priority queue
 
-# # Iterators
+## Iterators
 
 Iterate over container classes :P
 
