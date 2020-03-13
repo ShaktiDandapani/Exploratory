@@ -17,3 +17,24 @@ learn about functionalities not present in Python.
 
 The guide follows from:
 https://www.learncpp.com/cpp-tutorial/16-2-stl-containers-overview/
+
+# # Containers
+
+1. Sequence Containers: vector, etc.. 
+2. Associative Containers: set, mulltiset, map, multimap
+3. Container Adapters: stack, queue, priority queue
+
+# # Iterators
+
+Iterate over container classes :P
+
+Each container function has four basic member functions,
+which can be used with iterators:
+a. begin()
+b. end() - points past the end element !
+c. cbegin() - const read only
+d. cend() - const read only
+
+given the four basic member functions:
+a. container::iterator       : read/ write iterator 
+b. container::const_iterator : read only
