@@ -47,3 +47,21 @@ d. cend() - const read only
 given the four basic member functions:
 a. container::iterator       : read/ write iterator 
 b. container::const_iterator : read only
+
+## Algorithms
+
+Generic algorithms for working with container elements
+a. search
+b. sort 
+c. insert 
+d. reorder
+e. remove
+f. copy 
+
+### Note
+Care needs to be taken as some containers and algorithms
+might face compatibility issues, leading to infinite loops
+and faulty behaviour.
+But each algorithm can be implemented once as functions
+that use iterators :D (kind of vague but hey my brain 
+understands it ^^!)
