@@ -1,32 +1,76 @@
 #include <iostream>
 #include "slist_node.h"
 
+
 class LinkedList
 {
+
 private:
-	LNode *head, *tail;
+	Node *head, *tail;
 
 public:
-	LinkedList() : head(NULL), tail(NULL) { }
-	void addFirst(int);
-	void addLast(int);
-	void traverse();
-	void insertBefore(int);
-	void insertAfter(int);
-	void deleteNode();
-	LinkedList cloneList(LinkedList*);
-    void displayList();
+	void createNode(int);
+	void deleteNode(int);
 
 };
+
+
+void LinkedList::createNode(int value)
+{
+	Node* temp;
+	Node* headGhost;
+	temp->data = value;
+	temp->next = NULL;
+
+	if (head == NULL)
+	{
+		head = temp;
+		tail = temp;
+		temp = NULL;
+	}
+	else
+	{
+		tail->next = temp;
+		tail = temp;
+
+	}
+}
+
+
+void LinkedList::deleteNode(int position)
+{
+
+	// traverse through the linked list 
+	Node* travNode;
+	Node* pre;
+	Node* cur;
+	
+	travNode = head;
+
+	int pos = 0;
+
+	while (travNode->next != NULL)
+	{
+		travNode = travNode->next;
+		if (pos == position){
+			// create a link between previous 
+			// and next node
+			// then delete the current node
+		}
+		pos ++;
+	}
+
+}
+
+
+
+
 
 
 
 int main()
 {
-
-	std::cout << "Do begin ma dude" << std::endl;
+	LinkedList list1;
 
 	return 0;
-	
-
 }
