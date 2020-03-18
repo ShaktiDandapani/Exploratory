@@ -38,6 +38,7 @@ int main()
 
 		for (int j = i + 1; j < 5; j++)
 		{
+			std::cout << i << j << std::endl;
 			if (a[j] < a[min])
 			{
 				swap(&a[j], &a[min]);
