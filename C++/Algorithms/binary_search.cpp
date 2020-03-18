@@ -37,7 +37,10 @@ int main()
 	// assuming ascending order
 	int arrayX[10] = { 1 , 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-	//
+	// size of array = sizeof(arrayX) / sizeof(arrayX[0])
+	// numerator = size of the array in bytes (complete) = 5 * 4 = 20 bytes
+	// denominator = size of 0th element = 4 bytes
+	// size = numerator / denominator = 20 / 4 = 5 units (boom)
 	int num = sizeof(arrayX);
 	int den = sizeof(arrayX[0]);
 
