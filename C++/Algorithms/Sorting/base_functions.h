@@ -8,10 +8,10 @@ void swap(int* a, int* b)
 	*a = *a - *b;
 }
 
-void displayArray(int arr[])
+void displayArray(int arr[], int size)
 {
 
-	for (int index=0; index < 5; index++)
+	for (int index=0; index < size; index++)
 	{
 		std::cout << arr[index] << " ";
 	}

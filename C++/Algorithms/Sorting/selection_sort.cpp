@@ -42,7 +42,7 @@ int main()
 			if (a[j] < a[min])
 			{
 				swap(&a[j], &a[min]);
-				displayArray(a);
+				displayArray(a, 5);
 
 				min = j;
 			}
@@ -51,12 +51,8 @@ int main()
 
 	std::cout << "Sorted Array  (Selection Sort)" << std::endl;
 
-	for (int index=0; index < 5; index++)
-	{
-		std::cout << a[index] << " ";
-	}
-	std::cout << std::endl;
-
+	displayArray(a, 5);
+	
 	return 0;
 
 }

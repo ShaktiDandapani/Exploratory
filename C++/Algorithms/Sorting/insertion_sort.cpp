@@ -12,7 +12,7 @@ int main()
 	int j;
 
 
-    displayArray(a);
+    displayArray(a, 8);
 
 	// starts from 1 as it is assumed
 	// the first element is already
@@ -33,6 +33,6 @@ int main()
 	}
 
 
-	displayArray(a);
+	displayArray(a, 8);
 
 }

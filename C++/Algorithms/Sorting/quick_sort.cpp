@@ -1,6 +1,8 @@
 #include <iostream>
 #include "base_functions.h"
 
+// partition
+// quick sort
 
 int main()
 {
