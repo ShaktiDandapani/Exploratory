@@ -22,6 +22,9 @@ https://www.geeksforgeeks.org/heap-sort/
 // recursively does it 
 // till exit clauses are reached i.e. 
 // l < n and r < n loops.
+
+// Essentially store a binary heap tree
+// as an array (think of it as a numpy flatten)
 void heapify(int arr[], int n, int i)
 {
 	int largest = i;

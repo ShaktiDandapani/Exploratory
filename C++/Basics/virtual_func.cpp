@@ -1,19 +1,16 @@
 #include<iostream>
 
-
-
-
 class Weapon
 {
 public:
 
-	virtual void features() 
+	virtual void features()
 	{
 		std::cout << "Loading weapon features.\n";
 	}
 };
 
-class Bomb : public Weapon 
+class Bomb : public Weapon
 {
 public:
 	void features()
@@ -52,7 +49,7 @@ int main()
 
 	w = &b;
 	l->loadFeatures(w);
-	
+
 	w = &g;
 	l->loadFeatures(w);
 
