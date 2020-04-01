@@ -27,3 +27,7 @@ independent projects I undertake
 based on my domain interest, combined
 with knowledge of the sphere and a 
 realisation of ideas into software.
+
+
+### Links to interesting tutorials
+1. https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb

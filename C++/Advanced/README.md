@@ -29,3 +29,8 @@ keep updating my own awareness.
 1. Weblinks:
    1. https://developers.google.com/edu/c++/cpp-in-depth
    2. http://books.gigatux.nl/mirror/applicationdevelopment/7277/DDU0034.html
+
+
+### Folder - InputOutput
+Here in we deal with various forms of input and output functionaility offered
+by C++, including ostream, istream, fstream and iostream.
