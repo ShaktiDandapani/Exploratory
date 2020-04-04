@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath>1 
+#include <cmath>
 #include <stdio.h>
 
 void update(int* a, int* b)
