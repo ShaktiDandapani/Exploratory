@@ -11,29 +11,47 @@ public:
 
 public:
     // Constructor    
-    Node() : value(value), pos(pos), left(nullptr), right(nullptr) { }
+    Node() : value(value),  pos(pos), left(NULL), right(NULL) { }
 };
 
 class BST
 {
 private: 
     Node *root;
-    int root_pos = 1; // just for fun ! 
     void Insert(Node* node, int value);
     void Delete(Node* node, int value);
+    void DestroyTree(Node* node);
 
 public:
-
     // No duplicates in test cases
     // guaranteed ! 
     // still useful to have a position
     void Insert(int value);
     void Delete(int value);
     void PrintTree();
+    void DestroyTree();
 
 public:
-    ~BST();
+    ~BST()
+    {
+        DestroyTree();
+    }
 };
+
+void BST::DestroyTree()
+{
+    DestroyTree(root);
+}
+
+void BST::DestroyTree(Node* node)
+{
+    if (node != NULL)
+    {
+        DestroyTree(node->left);
+        DestroyTree(node->right);
+        delete node;
+    }
+}
 
 
 // Core private implementation
@@ -41,7 +59,7 @@ void BST::Insert(Node* node, int value)
 {
     if (value < node->value)
     {
-        if (node->left != nullptr)
+        if (node->left != NULL)
         {
             Insert(node->left, value);
         }
@@ -55,7 +73,7 @@ void BST::Insert(Node* node, int value)
     }
     else if (value > node->value)
     {
-        if (node->right != nullptr)
+        if (node->right != NULL)
         {
             Insert(node->right, value);
         }
@@ -73,12 +91,12 @@ void BST::Insert(Node* node, int value)
 // Public interface
 void BST::Insert(int value)
 {
-    if (root == nullptr)
+    if (root == NULL)
     {
         // heap allocation
         Node* temp = new Node;
         temp->value = value;
-        temp->pos = root_pos;
+        temp->pos = 1;
         root = temp;
     }
     else
