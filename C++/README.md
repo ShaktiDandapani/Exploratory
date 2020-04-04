@@ -28,6 +28,15 @@ based on my domain interest, combined
 with knowledge of the sphere and a 
 realisation of ideas into software.
 
+### Addendum 
+The problems folder contains solutions,
+from various coding resources available 
+online, the references are found within
+each respective code/ script. This is 
+done to keep my skills sharp and expand
+on knowledge existing, as well as 
+novel concepts I come across.
+
 
 ### Links to interesting tutorials
 1. https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb
