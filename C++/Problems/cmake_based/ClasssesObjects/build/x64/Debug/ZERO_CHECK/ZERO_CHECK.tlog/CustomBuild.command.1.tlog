@@ -1,0 +1,10 @@
+^D:\PROGRAMMING\C++\C++DEV\GITHUBREPO\EXPLORATORY\C++\PROBLEMS\CMAKE_BASED\CLASSSESOBJECTS\BUILD\CMAKEFILES\ACE6DED3E5718053672AC40586950913\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Programming/C++/C++Dev/GithubRepo/Exploratory/C++/Problems/cmake_based/ClasssesObjects -BD:/Programming/C++/C++Dev/GithubRepo/Exploratory/C++/Problems/cmake_based/ClasssesObjects/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Programming/C++/C++Dev/GithubRepo/Exploratory/C++/Problems/cmake_based/ClasssesObjects/build/Classes_Objects.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 class Node
 {
@@ -158,23 +159,17 @@ int main()
     int number_of_queries = 0;
 
     std::cin >> number_of_queries;
+    std::cin.ignore(); // ignore trailing newline '\n' from previous cin.
 
     int i = 0;
     std::string input;
 
     while (i < number_of_queries)
     {
-        std::cin >> input;
-        const char* inp = input.c_str();
 
-        if (inp[0] == 'i')
-        {
-            tree_Obj.Insert(input[1]);
-        }
-        else if (input[0] == 'd')
-        {
-            tree_Obj.Delete(input[1]);
-        }
+        std::getline(std::cin, input);
+
+        std::cout << "Split input: " << input;
 
         i++;
     }
