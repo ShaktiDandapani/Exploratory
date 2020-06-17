@@ -26,3 +26,6 @@ The folders and files can be accessed and build run from
 that directory with . or .. or any other desired method,
 
 I have chosen to use a build directory currently.
+
+
+### Updates 17.06.2020
